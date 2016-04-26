@@ -2,4 +2,4 @@
 - hosts: "{{ env }}_blog_servers"
   roles:
     - common
-    - node
+    - blog
