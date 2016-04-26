@@ -1,5 +1,5 @@
-root_dir: /home/fogetti
-blog_dir: "{{ root_dir }}/services/fogetti-blog
+root_dir: "/home/fogetti"
+blog_dir: "{{ root_dir }}/services/fogetti-blog"
 blog_bin_dir: "{{ blog_dir }}"
 
 # Blog app general config
