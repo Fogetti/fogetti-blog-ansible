@@ -1,0 +1,4 @@
+[dev_blog_servers]
+valentine
+
+[dev_blog_servers:vars]

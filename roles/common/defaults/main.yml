@@ -1,0 +1,9 @@
+root_dir: /home/fogetti
+blog_dir: "{{ root_dir }}/services/fogetti-blog
+blog_bin_dir: "{{ blog_dir }}"
+
+# Blog app general config
+blog_install_cmd: "{{ blog_bin_dir }}/node install"
+blog_start_cmd: "supervisorctl start fogetti-blog"
+blog_stop_cmd: "supervisorctl stop fogetti-blog"
+blog_restart_cmd: "supervisorctl restart fogetti-blog"

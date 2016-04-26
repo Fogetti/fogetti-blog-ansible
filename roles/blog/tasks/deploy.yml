@@ -1,0 +1,10 @@
+---
+
+- name: ensure blog folder exists
+  file: path={{ blog_dir }} state=directory
+
+- name: generate the fogetti-blog '.env' file
+  template: src=env.j2 dest={{ blog_dir }}/.env
+
+- name: restart the fogetti-blog
+  command: "{{ blog_restart_cmd }}"
