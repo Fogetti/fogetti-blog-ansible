@@ -4,7 +4,7 @@
   file: path={{ blog_dir }} state=directory
 
 - name: Get the fogetti-blog from git
-  git: repo=git@github.com:Fogetti/fogetti-blog.git dest={{ blog_dir }}
+  git: repo=git@github.com:Fogetti/fogetti-blog.git dest={{ blog_dir }} force=yes
 
 - name: generate the fogetti-blog '.env' file
   template: src=env.j2 dest={{ blog_dir }}/.env
