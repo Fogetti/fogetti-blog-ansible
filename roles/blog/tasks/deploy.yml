@@ -4,7 +4,7 @@
   file: path={{ blog_dir }} state=directory
 
 - name: Get the fogetti-blog from git
-  git: repo=git@github.com:Fogetti/fogetti-blog.git dest={{ blog_dir }} force=yes
+  git: repo=git@github.com:Fogetti/fogetti-blog.git dest={{ blog_dir }} force=yes version=fd32a0d3683fadff6d14630e5f1921f2222514f6
 
 - name: Install the latest Keystone changes
   npm: name=keystone path={{ blog_dir }}
